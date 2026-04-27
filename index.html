@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08111f" />
+  <title>Francisco Pinto | Portafolio Inmersivo</title>
+  <meta name="description" content="Portafolio profesional de Francisco Pinto: educación inmersiva, IoT, VR, AR, impresión 3D, automatización e inclusión educativa." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <aside class="accessibility" aria-label="Herramientas de accesibilidad">
+    <button id="themeBtn" title="Cambiar tema">🌗</button>
+    <button id="fontUp" title="Aumentar texto">A+</button>
+    <button id="fontDown" title="Disminuir texto">A−</button>
+    <button id="speakBtn" title="Leer página">🗣️</button>
+    <button id="contrastBtn" title="Alto contraste">◐</button>
+  </aside>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span>⚡</span> Francisco Pinto</a>
+    <nav>
+      <a href="#bio">Bio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Educación inmersiva · Tecnología aplicada · Inclusión</p>
+        <h1>Portafolio profesional de <span>Francisco Pinto</span></h1>
+        <p class="lead">Ingeniero en Informática y docente que integra realidad virtual, impresión 3D, IoT y automatización para transformar experiencias de aprendizaje reales en el aula.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#proyectos">🚀 Ver proyectos</a>
+          <a class="btn ghost" href="assets/cv-francisco-pinto.html" download>📄 Descargar bio</a>
+          <a class="btn ghost" href="#contacto">📩 Contacto</a>
+        </div>
+        <div class="metrics">
+          <article><strong>VR/AR/3D</strong><span>Experiencias inmersivas</span></article>
+          <article><strong>IoT</strong><span>Sensores y automatización</span></article>
+          <article><strong>DUA/PIE</strong><span>Accesibilidad educativa</span></article>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="avatar-ring"><img src="assets/img/perfil.png" alt="Foto de Francisco Pinto" /></div>
+        <div class="status"><span></span> Disponible para proyectos educativos, STEM y XR</div>
+      </div>
+    </section>
+
+    <section id="bio" class="section reveal">
+      <div class="section-title">
+        <p>01 · Perfil</p>
+        <h2>Biografía profesional</h2>
+      </div>
+      <div class="glass bio-card">
+        <p><strong>Francisco Pinto</strong> es Ingeniero en Informática y docente orientado a la integración de tecnología e innovación en educación. Desarrolla e implementa proyectos educativos basados en realidad virtual, impresión 3D, IoT y automatización, con un fuerte enfoque en inclusión, aprendizaje activo y desarrollo de habilidades del siglo XXI.</p>
+        <p>Ha liderado iniciativas vinculadas a invernaderos inteligentes, acuaponía y sistemas de monitoreo ambiental, integrando ciencia, tecnología y sustentabilidad en el aula. Además, impulsa el desarrollo de plataformas educativas digitales y proyectos bajo el concepto de educación inmersiva.</p>
+        <p>Su trabajo busca generar impacto real en la comunidad educativa mediante soluciones tecnológicas aplicadas, fomentando el pensamiento crítico, la innovación y el acceso equitativo al aprendizaje.</p>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section reveal">
+      <div class="section-title">
+        <p>02 · Laboratorio de innovación</p>
+        <h2>Proyectos destacados</h2>
+      </div>
+      <div class="cards">
+        <article class="project glass">
+          <div class="icon">🐟</div><h3>SIAMP</h3>
+          <p>Sistema Integrado de Alimentación y Monitoreo Piscícola con sensores, registro de datos y automatización.</p>
+          <div class="tags"><span>ESP8266</span><span>IoT</span><span>Google Sheets</span></div>
+          <a href="viewer3d/">👁️ Explorar 3D</a>
+        </article>
+        <article class="project glass">
+          <div class="icon">🌱</div><h3>Invernadero inteligente</h3>
+          <p>Monitoreo ambiental, hidroponía, acuaponía y automatización para aprendizaje STEM aplicado.</p>
+          <div class="tags"><span>Sensores</span><span>Sustentabilidad</span><span>STEM</span></div>
+          <a href="viewerAR/">📱 Ver AR</a>
+        </article>
+        <article class="project glass">
+          <div class="icon">🥽</div><h3>Educación inmersiva</h3>
+          <p>Experiencias VR/AR/3D para inclusión, patrimonio, ciencias y aprendizaje activo.</p>
+          <div class="tags"><span>Meta Quest</span><span>3D</span><span>DUA</span></div>
+          <a href="viewerVR/">🥽 Modo VR</a>
+        </article>
+        <article class="project glass">
+          <div class="icon">🦾</div><h3>Diseño Sin Barreras</h3>
+          <p>Diseño 3D, accesibilidad y prototipado de soluciones educativas inclusivas.</p>
+          <div class="tags"><span>Impresión 3D</span><span>Inclusión</span><span>Prototipos</span></div>
+          <a href="#contacto">🤝 Colaborar</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="impacto" class="section reveal">
+      <div class="section-title">
+        <p>03 · Valor educativo</p>
+        <h2>Impacto y enfoque pedagógico</h2>
+      </div>
+      <div class="timeline">
+        <div><b>Claim</b><p>La tecnología debe resolver problemas reales de aprendizaje, inclusión y participación.</p></div>
+        <div><b>Evidence</b><p>Proyectos con sensores, datos, prototipos, realidad virtual y experiencias aplicadas en aula.</p></div>
+        <div><b>Reasoning</b><p>Cuando el estudiante observa, mide, crea y argumenta, transforma conocimiento en competencia.</p></div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact reveal">
+      <div class="glass">
+        <h2>Conversemos un proyecto</h2>
+        <p>Disponible para iniciativas educativas, sitios inmersivos, prototipos IoT, capacitación docente y experiencias XR.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:contacto@neotechedulab.cl">📧 contacto@neotechedulab.cl</a>
+          <a class="btn ghost" href="https://neotechedulab.cl">🌐 NeoTech EduLab</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Francisco Pinto · Portafolio inmersivo PRO</footer>
+  <script src="app.js"></script>
+</body>
+</html>
