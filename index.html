@@ -4,125 +4,241 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#08111f" />
-  <title>Francisco Pinto | Portafolio Inmersivo</title>
-  <meta name="description" content="Portafolio profesional de Francisco Pinto: educación inmersiva, IoT, VR, AR, impresión 3D, automatización e inclusión educativa." />
+  <meta name="color-scheme" content="dark light" />
+  <title>Francisco Pinto | Portafolio profesional docente STEM, XR e inclusión</title>
+  <meta name="description" content="Portafolio profesional de Francisco Pinto: docente e ingeniero en informática que integra IoT, realidad virtual, impresión 3D, automatización, ciencia escolar, inclusión y tecnología educativa." />
+  <meta name="keywords" content="Francisco Pinto, NeoTech EduLab, PEVE, educación inmersiva, realidad virtual, IoT, impresión 3D, inclusión educativa, STEM, Global Teacher Prize Chile" />
+  <meta name="author" content="Francisco Pinto" />
+  <meta property="og:title" content="Francisco Pinto | Portafolio profesional docente" />
+  <meta property="og:description" content="Innovación educativa, IoT, VR/AR, impresión 3D, inclusión y aprendizaje basado en proyectos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/perfil.png" />
+  <link rel="canonical" href="https://panchopinto.github.io/portafolio-profesional/" />
   <link rel="manifest" href="manifest.json" />
+  <link rel="preload" href="assets/img/perfil.png" as="image" />
   <link rel="stylesheet" href="style.css" />
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Francisco Pinto",
+    "jobTitle":"Ingeniero en Informática y docente",
+    "url":"https://panchopinto.github.io/portafolio-profesional/",
+    "affiliation":[{"@type":"Organization","name":"NeoTech EduLab"}],
+    "knowsAbout":["Educación inmersiva","IoT educativo","Realidad virtual","Impresión 3D","Automatización","Inclusión educativa","STEM"]
+  }
+  </script>
 </head>
 <body>
-  <div class="bg-grid"></div>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
   <aside class="accessibility" aria-label="Herramientas de accesibilidad">
-    <button id="themeBtn" title="Cambiar tema">🌗</button>
-    <button id="fontUp" title="Aumentar texto">A+</button>
-    <button id="fontDown" title="Disminuir texto">A−</button>
-    <button id="speakBtn" title="Leer página">🗣️</button>
-    <button id="contrastBtn" title="Alto contraste">◐</button>
+    <button id="themeBtn" type="button" title="Cambiar tema" aria-label="Cambiar tema claro u oscuro">🌗</button>
+    <button id="fontUp" type="button" title="Aumentar texto" aria-label="Aumentar tamaño del texto">A+</button>
+    <button id="fontDown" type="button" title="Disminuir texto" aria-label="Disminuir tamaño del texto">A−</button>
+    <button id="speakBtn" type="button" title="Leer página" aria-label="Activar o detener lectura de la página">🗣️</button>
+    <button id="contrastBtn" type="button" title="Alto contraste" aria-label="Activar alto contraste">◐</button>
+    <button id="langBtn" type="button" title="Cambiar idioma" aria-label="Cambiar idioma entre español e inglés">ES/EN</button>
   </aside>
 
-  <header class="topbar">
-    <a class="brand" href="#inicio"><span>⚡</span> Francisco Pinto</a>
-    <nav>
-      <a href="#bio">Bio</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#impacto">Impacto</a>
-      <a href="#contacto">Contacto</a>
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span>⚡</span> Francisco Pinto</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Navegación principal">
+      <a href="#perfil" data-i18n="navPerfil">Perfil</a>
+      <a href="#gtp" data-i18n="navGtp">GTP 2026</a>
+      <a href="#proyectos" data-i18n="navProyectos">Proyectos</a>
+      <a href="#impacto" data-i18n="navImpacto">Impacto</a>
+      <a href="#contacto" data-i18n="navContacto">Contacto</a>
     </nav>
   </header>
 
-  <main id="inicio">
-    <section class="hero reveal">
+  <main id="contenido">
+    <section id="inicio" class="hero reveal">
       <div class="hero-copy">
-        <p class="eyebrow">Educación inmersiva · Tecnología aplicada · Inclusión</p>
-        <h1>Portafolio profesional de <span>Francisco Pinto</span></h1>
-        <p class="lead">Ingeniero en Informática y docente que integra realidad virtual, impresión 3D, IoT y automatización para transformar experiencias de aprendizaje reales en el aula.</p>
+        <p class="eyebrow" data-i18n="eyebrow">Educación pública · STEM · XR · Inclusión</p>
+        <h1 data-i18n="heroTitle">Tecnología educativa para que estudiantes creen soluciones reales.</h1>
+        <p class="lead" data-i18n="heroLead">Soy Francisco Pinto, Ingeniero en Informática y docente. Integro IoT, realidad virtual, impresión 3D, automatización y plataformas educativas para transformar el aprendizaje en experiencias activas, inclusivas y conectadas con el territorio.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#proyectos">🚀 Ver proyectos</a>
-          <a class="btn ghost" href="assets/cv-francisco-pinto.html" download>📄 Descargar bio</a>
-          <a class="btn ghost" href="#contacto">📩 Contacto</a>
+          <a class="btn primary" href="#gtp" data-i18n="btnGtp">🏆 Ver enfoque GTP 2026</a>
+          <a class="btn ghost" href="#proyectos" data-i18n="btnProjects">🚀 Explorar proyectos</a>
+          <a class="btn ghost" href="assets/cv-francisco-pinto.html" data-i18n="btnBio">📄 Bio imprimible</a>
         </div>
-        <div class="metrics">
-          <article><strong>VR/AR/3D</strong><span>Experiencias inmersivas</span></article>
-          <article><strong>IoT</strong><span>Sensores y automatización</span></article>
-          <article><strong>DUA/PIE</strong><span>Accesibilidad educativa</span></article>
+        <div class="metrics" aria-label="Resumen de áreas de trabajo">
+          <article><strong>IoT + Datos</strong><span>Sensores, monitoreo y automatización escolar.</span></article>
+          <article><strong>VR/AR/3D</strong><span>Experiencias inmersivas para ciencias e inclusión.</span></article>
+          <article><strong>DUA/PIE</strong><span>Accesibilidad, participación y altas expectativas.</span></article>
         </div>
       </div>
-      <div class="profile-card">
-        <div class="avatar-ring"><img src="assets/img/perfil.png" alt="Foto de Francisco Pinto" /></div>
-        <div class="status"><span></span> Disponible para proyectos educativos, STEM y XR</div>
+      <div class="profile-card" aria-label="Perfil visual">
+        <div class="avatar-ring"><img src="assets/img/perfil.png" alt="Fotografía de Francisco Pinto" /></div>
+        <div class="status"><span aria-hidden="true"></span> Portafolio para innovación educativa, STEM, XR y vinculación territorial</div>
       </div>
     </section>
 
-    <section id="bio" class="section reveal">
+    <section id="perfil" class="section reveal">
       <div class="section-title">
-        <p>01 · Perfil</p>
-        <h2>Biografía profesional</h2>
+        <p>01 · Perfil profesional</p>
+        <h2>Ingeniería, docencia e innovación con sentido pedagógico.</h2>
       </div>
-      <div class="glass bio-card">
-        <p><strong>Francisco Pinto</strong> es Ingeniero en Informática y docente orientado a la integración de tecnología e innovación en educación. Desarrolla e implementa proyectos educativos basados en realidad virtual, impresión 3D, IoT y automatización, con un fuerte enfoque en inclusión, aprendizaje activo y desarrollo de habilidades del siglo XXI.</p>
-        <p>Ha liderado iniciativas vinculadas a invernaderos inteligentes, acuaponía y sistemas de monitoreo ambiental, integrando ciencia, tecnología y sustentabilidad en el aula. Además, impulsa el desarrollo de plataformas educativas digitales y proyectos bajo el concepto de educación inmersiva.</p>
-        <p>Su trabajo busca generar impacto real en la comunidad educativa mediante soluciones tecnológicas aplicadas, fomentando el pensamiento crítico, la innovación y el acceso equitativo al aprendizaje.</p>
+      <div class="grid-2">
+        <article class="glass bio-card">
+          <h3>Biografía breve</h3>
+          <p><strong>Francisco Pinto</strong> es Ingeniero en Informática y docente orientado a la integración de tecnología, ciencia aplicada e innovación en educación. Su trabajo conecta programación, IoT, automatización, impresión 3D, realidad virtual, realidad aumentada y plataformas educativas con desafíos reales del aula.</p>
+          <p>Su foco es que los estudiantes aprendan creando: midiendo datos, diseñando prototipos, construyendo explicaciones, comunicando resultados y participando en experiencias inclusivas que fortalecen la autoestima académica y el pensamiento crítico.</p>
+        </article>
+        <article class="glass quote-card">
+          <p class="quote">“La tecnología en educación no debe ser solo un recurso llamativo; debe convertirse en una herramienta ética para incluir, investigar, crear y transformar comunidades.”</p>
+          <ul class="checklist">
+            <li>Aprendizaje basado en proyectos y problemas reales.</li>
+            <li>Integración de ciencias, tecnología, sustentabilidad y accesibilidad.</li>
+            <li>Vinculación con instituciones, territorio y comunidad educativa.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="gtp" class="section reveal">
+      <div class="section-title">
+        <p>02 · Narrativa para Global Teacher Prize Chile 2026</p>
+        <h2>Propósito, impacto, integralidad y ciudadanía global.</h2>
+      </div>
+      <div class="gtp-panel glass">
+        <div>
+          <span class="pill">Propósito docente</span>
+          <h3>Enseñar para abrir oportunidades</h3>
+          <p>Mi propósito es demostrar que estudiantes de la educación pública pueden crear soluciones tecnológicas de alto nivel cuando reciben desafíos significativos, acompañamiento pedagógico y confianza en sus capacidades.</p>
+        </div>
+        <div>
+          <span class="pill">Impacto en aula y comunidad</span>
+          <h3>Del contenido a la evidencia</h3>
+          <p>Los proyectos integran sensores, datos, realidad virtual, impresión 3D, acuicultura, invernadero inteligente y plataformas educativas. El aprendizaje se evidencia en prototipos, participación, comunicación científica y colaboración con la comunidad.</p>
+        </div>
+        <div>
+          <span class="pill">Altas expectativas</span>
+          <h3>Desafíos complejos con apoyos reales</h3>
+          <p>El contexto no se usa para reducir la exigencia, sino para diseñar apoyos: roles diferenciados, aprendizaje activo, recursos accesibles y experiencias donde todos los estudiantes puedan aportar desde sus talentos.</p>
+        </div>
+        <div>
+          <span class="pill">Ciudadanía global</span>
+          <h3>Problemas locales, mirada global</h3>
+          <p>La sustentabilidad, el uso responsable de datos, la inclusión, el patrimonio y la empatía se trabajan desde experiencias concretas que conectan ciencia escolar con desafíos ambientales, sociales y culturales.</p>
+        </div>
       </div>
     </section>
 
     <section id="proyectos" class="section reveal">
       <div class="section-title">
-        <p>02 · Laboratorio de innovación</p>
-        <h2>Proyectos destacados</h2>
+        <p>03 · Laboratorio de innovación educativa</p>
+        <h2>Proyectos destacados y evidencias de trabajo.</h2>
       </div>
       <div class="cards">
         <article class="project glass">
-          <div class="icon">🐟</div><h3>SIAMP</h3>
-          <p>Sistema Integrado de Alimentación y Monitoreo Piscícola con sensores, registro de datos y automatización.</p>
-          <div class="tags"><span>ESP8266</span><span>IoT</span><span>Google Sheets</span></div>
-          <a href="viewer3d/">👁️ Explorar 3D</a>
+          <div class="icon">🐟</div>
+          <h3>SIAMP</h3>
+          <p>Sistema Integrado de Alimentación y Monitoreo Piscícola con ESP8266, sensores de temperatura, humedad, automatización de alimentación y registro de datos.</p>
+          <div class="tags"><span>IoT</span><span>Acuicultura</span><span>Datos</span></div>
+          <a href="viewer3d/">👁️ 3D / evidencia</a>
         </article>
         <article class="project glass">
-          <div class="icon">🌱</div><h3>Invernadero inteligente</h3>
-          <p>Monitoreo ambiental, hidroponía, acuaponía y automatización para aprendizaje STEM aplicado.</p>
-          <div class="tags"><span>Sensores</span><span>Sustentabilidad</span><span>STEM</span></div>
-          <a href="viewerAR/">📱 Ver AR</a>
+          <div class="icon">🌱</div>
+          <h3>Invernadero inteligente</h3>
+          <p>Espacio de aprendizaje STEM con hidroponía, acuaponía, riego automatizado, sensores ambientales y experimentación escolar.</p>
+          <div class="tags"><span>Sustentabilidad</span><span>STEM</span><span>Automatización</span></div>
+          <a href="viewerAR/">📱 AR / recorrido</a>
         </article>
         <article class="project glass">
-          <div class="icon">🥽</div><h3>Educación inmersiva</h3>
-          <p>Experiencias VR/AR/3D para inclusión, patrimonio, ciencias y aprendizaje activo.</p>
-          <div class="tags"><span>Meta Quest</span><span>3D</span><span>DUA</span></div>
-          <a href="viewerVR/">🥽 Modo VR</a>
+          <div class="icon">🥽</div>
+          <h3>Educación inmersiva</h3>
+          <p>Uso de realidad virtual, realidad aumentada y modelos 3D para ciencias, patrimonio, orientación vocacional, inclusión y aprendizaje activo.</p>
+          <div class="tags"><span>VR</span><span>AR</span><span>3D</span></div>
+          <a href="viewerVR/">🥽 VR / experiencia</a>
         </article>
         <article class="project glass">
-          <div class="icon">🦾</div><h3>Diseño Sin Barreras</h3>
-          <p>Diseño 3D, accesibilidad y prototipado de soluciones educativas inclusivas.</p>
-          <div class="tags"><span>Impresión 3D</span><span>Inclusión</span><span>Prototipos</span></div>
+          <div class="icon">🦾</div>
+          <h3>Diseño Sin Barreras</h3>
+          <p>Diseño 3D, prototipado e impresión de soluciones de accesibilidad, incluyendo piezas personalizadas y experiencias de aprendizaje inclusivo.</p>
+          <div class="tags"><span>Inclusión</span><span>Impresión 3D</span><span>DUA</span></div>
           <a href="#contacto">🤝 Colaborar</a>
+        </article>
+        <article class="project glass">
+          <div class="icon">🏺</div>
+          <h3>Ver con las Manos</h3>
+          <p>Proyecto de accesibilidad patrimonial con piezas 3D, braille y experiencias inmersivas para acercar cultura y ciencia a más estudiantes.</p>
+          <div class="tags"><span>Patrimonio</span><span>Braille</span><span>Inclusión</span></div>
+          <a href="#impacto">✅ Ver impacto</a>
+        </article>
+        <article class="project glass">
+          <div class="icon">🧪</div>
+          <h3>PEVE / NeoTech EduLab</h3>
+          <p>Plataforma educativa con contenidos, evaluaciones, accesibilidad, progreso estudiantil y recursos orientados a trayectorias de aprendizaje.</p>
+          <div class="tags"><span>EdTech</span><span>Accesibilidad</span><span>IA</span></div>
+          <a href="https://app.peve.cl" target="_blank" rel="noopener">🌐 Visitar PEVE</a>
         </article>
       </div>
     </section>
 
     <section id="impacto" class="section reveal">
       <div class="section-title">
-        <p>03 · Valor educativo</p>
-        <h2>Impacto y enfoque pedagógico</h2>
+        <p>04 · Impacto educativo</p>
+        <h2>Una metodología basada en propósito, evidencia y reflexión.</h2>
       </div>
-      <div class="timeline">
-        <div><b>Claim</b><p>La tecnología debe resolver problemas reales de aprendizaje, inclusión y participación.</p></div>
-        <div><b>Evidence</b><p>Proyectos con sensores, datos, prototipos, realidad virtual y experiencias aplicadas en aula.</p></div>
-        <div><b>Reasoning</b><p>Cuando el estudiante observa, mide, crea y argumenta, transforma conocimiento en competencia.</p></div>
+      <div class="timeline cer">
+        <div>
+          <b>Claim</b>
+          <p>Todos los estudiantes pueden participar en experiencias científicas y tecnológicas de alto nivel si el diseño pedagógico es accesible, desafiante y significativo.</p>
+        </div>
+        <div>
+          <b>Evidence</b>
+          <p>Los proyectos generan prototipos, visualización de datos, modelos 3D, experiencias VR/AR, participación STEM y colaboración con actores educativos, científicos y territoriales.</p>
+        </div>
+        <div>
+          <b>Reasoning</b>
+          <p>Cuando el estudiante observa, mide, diseña, argumenta y comunica, deja de memorizar contenidos aislados y comienza a construir competencias transferibles.</p>
+        </div>
+      </div>
+      <div class="impact-grid">
+        <article class="glass mini"><h3>Competencias digitales</h3><p>Programación, sensores, modelado 3D, análisis de datos, automatización e interacción con plataformas.</p></article>
+        <article class="glass mini"><h3>Competencias socioemocionales</h3><p>Colaboración, liderazgo, comunicación, perseverancia, autonomía y confianza académica.</p></article>
+        <article class="glass mini"><h3>Vinculación territorial</h3><p>Proyectos conectados con sustentabilidad, acuicultura, patrimonio, comunidad escolar e instituciones colaboradoras.</p></article>
+        <article class="glass mini"><h3>Inclusión efectiva</h3><p>Recursos accesibles, roles diversos, tecnologías asistivas, experiencias táctiles, visuales e inmersivas.</p></article>
+      </div>
+    </section>
+
+    <section id="ruta" class="section reveal">
+      <div class="section-title">
+        <p>05 · Ruta de colaboración</p>
+        <h2>Cómo se puede replicar o escalar el trabajo.</h2>
+      </div>
+      <div class="roadmap">
+        <article><span>1</span><h3>Diagnóstico</h3><p>Identificar desafíos pedagógicos, brechas de acceso y oportunidades del contexto escolar.</p></article>
+        <article><span>2</span><h3>Diseño</h3><p>Crear experiencias con objetivos de aprendizaje, DUA, recursos tecnológicos y evidencias evaluables.</p></article>
+        <article><span>3</span><h3>Implementación</h3><p>Trabajar con estudiantes mediante prototipos, experimentación, datos, reflexión y comunicación pública.</p></article>
+        <article><span>4</span><h3>Escalamiento</h3><p>Documentar, publicar, capacitar y transformar los proyectos en módulos reutilizables para otras comunidades.</p></article>
       </div>
     </section>
 
     <section id="contacto" class="section contact reveal">
-      <div class="glass">
-        <h2>Conversemos un proyecto</h2>
-        <p>Disponible para iniciativas educativas, sitios inmersivos, prototipos IoT, capacitación docente y experiencias XR.</p>
+      <div class="glass contact-card">
+        <p class="eyebrow">Contacto y vinculación</p>
+        <h2>Conversemos una experiencia educativa, científica o inmersiva.</h2>
+        <p>Disponible para proyectos STEM, sitios inmersivos, prototipos IoT, capacitación docente, experiencias XR, accesibilidad educativa y plataformas de aprendizaje.</p>
         <div class="contact-actions">
-          <a class="btn primary" href="mailto:contacto@neotechedulab.cl">📧 contacto@neotechedulab.cl</a>
-          <a class="btn ghost" href="https://neotechedulab.cl">🌐 NeoTech EduLab</a>
+          <a class="btn primary" href="mailto:franciscoandresp@gmail.com">📧 franciscoandresp@gmail.com</a>
+          <a class="btn ghost" href="https://www.neotechedulab.cl" target="_blank" rel="noopener">🌐 NeoTech EduLab</a>
+          <a class="btn ghost" href="https://app.peve.cl" target="_blank" rel="noopener">🧪 PEVE</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Francisco Pinto · Portafolio inmersivo PRO</footer>
-  <script src="app.js"></script>
+  <footer>
+    <p>© <span id="year"></span> Francisco Pinto · Portafolio profesional docente STEM, XR e inclusión</p>
+    <p class="footer-small">Sitio estático optimizado para GitHub Pages · PWA · Accesibilidad · SEO básico</p>
+  </footer>
+  <script src="app.js" defer></script>
 </body>
 </html>

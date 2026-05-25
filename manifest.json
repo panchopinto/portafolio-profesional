@@ -1,1 +1,22 @@
-{"name":"Portafolio Francisco Pinto","short_name":"FP Portfolio","start_url":"./index.html","display":"standalone","background_color":"#08111f","theme_color":"#08111f","icons":[{"src":"assets/img/perfil.png","sizes":"192x192","type":"image/png"}]}
+{
+  "name": "Portafolio profesional Francisco Pinto",
+  "short_name": "FP Portfolio",
+  "description": "Portafolio docente STEM, XR, IoT e inclusión educativa.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#08111f",
+  "icons": [
+    {
+      "src": "assets/img/perfil.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/perfil.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
